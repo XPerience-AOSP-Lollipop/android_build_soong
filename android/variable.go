@@ -89,7 +89,7 @@ type variableProperties struct {
 		}
 
 		// include xperience variables
-		XPerience android.Product_variables
+		*android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -157,7 +157,7 @@ type productVariables struct {
 	Override_rs_driver *string `json:",omitempty"`
 
 	// include xperience variables
-	XPerience android.ProductVariables
+	*android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {

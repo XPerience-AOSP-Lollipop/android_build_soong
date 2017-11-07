@@ -90,6 +90,7 @@ type variableProperties struct {
 
 		// include xperience variables
 		*android.Product_variables
+
 	} `android:"arch_variant"`
 }
 
